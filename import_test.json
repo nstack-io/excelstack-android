@@ -1,0 +1,14 @@
+{
+	"default": {
+		"cprNumber": "Cpr-nr.",
+		"password": "Adgangskode",
+		"activationCode": "Aktiveringskode",
+		"help": "Hjælp",
+		"noThanks": "Nej tak",
+		"edit": "Rediger",
+		"cancel": "Annuller",
+		"okay": "OK",
+		"create": "Opret",
+		"save": "Gem"
+	}
+}
