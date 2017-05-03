@@ -45,6 +45,12 @@ function getCellInfo(&$sheet, $x, $y)
 	$cell_info->bold = $style->getFont()->getBold();
 	$cell_info->color = $style->getFont()->getColor()->getRGB();
 	$cell_info->dataType = PHPExcel_Cell_DataType::dataTypeForValue($cell_info->value);
+	if($cell_info->dataType == "inlineStr")
+	{
+		$cell_info->value = $cell_info->value->getPlainText();
+		//var_dump($cell_info->value);
+	}
+	
 	return $cell_info;
 }
 
