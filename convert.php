@@ -58,7 +58,7 @@ function buildSectionKeysArray(&$sheet, &$languages)
 {
 	$keys = array();
 	$x = 0;
-	$y = 3;
+	$y = 1;
 	$count = 0;
 
 	$section_name = NULL;
