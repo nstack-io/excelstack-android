@@ -44,7 +44,7 @@ function buildSectionKeysArray(&$sheet, &$languages)
 {
 	$keys = array();
 	$x = 0;
-	$y = 3;
+	$y = 1;
 	$count = 0;
 
 	$section_name = NULL;
@@ -65,7 +65,7 @@ function buildSectionKeysArray(&$sheet, &$languages)
 			}
 			else if($section_name != NULL)
 			{
-				//printf("\tKey: %s\n", $cell_info->value);
+				printf("\tKey: %s\n", $cell_info->value);
 				$keys[$section_name][] = array('key' => $cell_info->value, 'row' => $y);
 			}
 			//var_dump($cell_info);
